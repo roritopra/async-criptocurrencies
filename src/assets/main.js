@@ -24,20 +24,20 @@ async function fetchData(urlApi) {
 
 //Call to the Api and sampling on screen with the asynchronous method "then".
 
-
 function obtainCoins() {
-    const apiUrl = ('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false');
-    fetch ( apiUrl )
-    .then(res=>res.json())
-    .then(resJson=> {
-        const coins = resJson;
-        console.log(coins)
-        showCoin(coins)
+  const apiUrl =
+    'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false';
+  fetch(apiUrl)
+    .then((res) => res.json())
+    .then((resJson) => {
+      const coins = resJson;
+      console.log(coins);
+      showCoin(coins);
     })
-    .catch(error=>error)
+    .catch((error) => error);
 }
 
-obtainCoins()
+obtainCoins();
 
 function showCoin(coins) {
   const resultDataElement = document.getElementById('Table-content-coins-all');
@@ -51,39 +51,61 @@ function showCoin(coins) {
     const symbol = coins[i].symbol.toUpperCase();
 
     let supply_number = ('000000000' + totalSupply).slice(-9);
-    
+
     const currentPriceColor = currentPrice < 0 ? 'red' : '#00EBA6';
     const priceChangeColor = priceChange < 0 ? 'red' : '#00EBA6';
     const totalSupplyColor = totalSupply < 0 ? 'red' : '#00EBA6';
 
     resultHTML += `
-      <div class="order">
-        <div class="Table-content-coins-left">
-          <p class="id">${formatNumber(i + 0)}</p>
-          <img src="${coins[i].image}" alt="">
-          <p>${coins[i].name}</p>
-          <span>${symbol}</span>
-        </div>
-        <div class="Table-content-coins-right">
-          <p class="price" style="color: ${currentPriceColor}">${currentPrice}</p>
-          <p class="price_change" style="color: ${priceChangeColor}">${priceChange}</p>
-          <p class="supply" style="color: ${totalSupplyColor}">${supply_number}</p>
+      <div class="order border">
+        <div class="order-container">
+          <div class="Table-content-coins-left">
+            <p class="id">${formatNumber(i + 1)}</p>
+            <img src="${coins[i].image}" alt="">
+            <p>${coins[i].name}</p>
+            <span>${symbol}</span>
+          </div>
+          <div class="Table-content-coins-right">
+            <p class="price" style="color: ${currentPriceColor}">${currentPrice}</p>
+            <p class="price_change" style="color: ${priceChangeColor}">${priceChange}</p>
+            <p class="supply" style="color: ${totalSupplyColor}">${supply_number}</p>
+          </div>
         </div>
       </div>
-      <div class="border"></div>
     `;
   }
 
   resultDataElement.innerHTML = resultHTML;
+
+  const coinFilterInput = document.getElementById('coin-filter');
+  coinFilterInput.addEventListener('input', function () {
+    const filterText = coinFilterInput.value.toLowerCase();
+    filterCoins(filterText);
+  });
+}
+
+function filterCoins(filterText) {
+  const coins = document.querySelectorAll('.order');
+
+  coins.forEach(function (coin) {
+    const coinName = coin.querySelector('p:nth-child(3)').textContent.toLowerCase();
+
+    if (coinName.includes(filterText)) {
+      coin.style.display = 'block';
+    } else {
+      coin.style.display = 'none';
+    }
+  });
 }
 
 function formatNumber(number) {
   if (number < 3) {
     return (number + 1).toString();
   } else {
-    return (number + 1) ;
+    return (number + 1);
   }
 }
+
 
 
 
