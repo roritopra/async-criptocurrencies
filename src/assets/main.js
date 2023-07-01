@@ -24,12 +24,14 @@ async function fetchData(urlApi) {
 
 //Call to the Api and sampling on screen with the asynchronous method "then".
 
+/*
+
 function obtainCoins() {
-    const apiUrl = ('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en');
+    const apiUrl = ('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false');
     fetch ( apiUrl )
     .then(res=>res.json())
     .then(resJson=> {
-        const coins = resJson[0].image
+        const coins = resJson;
         console.log(coins)
         showCoin(coins)
     })
@@ -39,8 +41,15 @@ function obtainCoins() {
 obtainCoins()
 
 function showCoin(coins) {
-    const app = null || document.getElementById('app');
-    app.innerHTML=`
-    <img src="${coins}">
-    `
+    const resultDataElement = document.getElementById('result-data');
+    let resultHTML = '';
+
+    for (let i = 0; i < coins.length; i++) {
+        resultHTML += `
+        <p>${coins[i].name}</p>
+        `;  
+    }
+
+    resultDataElement.innerHTML = resultHTML;
 }
+*/
