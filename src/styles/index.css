@@ -152,7 +152,7 @@ nav {
 }
 
 .right-table {
-  gap: 83px;
+  gap: 95px;
 }
 
 .Table-content {
@@ -173,15 +173,53 @@ nav {
   padding: 13px 39px;
 }
 
+.Table-content-coins-left img{
+  width: 46px;
+}
+
 .Table-content-coins-right {
   display: flex;
   align-items: center;
-  gap: 83px;
   padding-right: 39px;
+}
+
+.Table-content-coins-right p{
+  text-align: center;
+}
+
+.price, .price_change, .supply {
+  width: 99px;
+  max-width: 99px;
+}
+
+.price {
+  margin-right: 4.5rem;
+}
+
+.price_change {
+  margin-right: 6.2rem;
 }
 
 .border {
   border-bottom: 1px solid #6D6D6D;
+}
+
+.order p{
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 72px;
+}
+
+.order span {
+  color: #7A7A7A;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 72px;
 }
 
 footer {
@@ -191,3 +229,5 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+
