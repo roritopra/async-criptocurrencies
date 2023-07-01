@@ -60,7 +60,7 @@ function showCoin(coins) {
       <div class="order border">
         <div class="order-container">
           <div class="Table-content-coins-left">
-            <p class="id">${formatNumber(i + 1)}</p>
+            <p class="id">${formatNumber(i + 0)}</p>
             <img src="${coins[i].image}" alt="">
             <p>${coins[i].name}</p>
             <span>${symbol}</span>
