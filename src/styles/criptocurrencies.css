@@ -40,6 +40,7 @@ nav {
 
 .menu_button:hover {
   color: var(--green);
+  transition: color .2s;
 }
 
 .--modifier {

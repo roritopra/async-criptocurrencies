@@ -1,0 +1,151 @@
+:root {
+    --scrollY: -230px;
+    --green: #00EBA6;
+    --white: #FFFFFF;
+    --gray: #AFB9CB;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  body {
+    background-color: #1B1D23;
+  }
+  
+  nav {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 134px;
+  }
+  
+  .left-nav {
+    display: flex;
+    align-items: center;
+    gap: 122px;
+  }
+  
+  .menu_button {
+    color: #AFB9CB;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+  }
+  
+  .menu_button:hover {
+    color: var(--green);
+    transition: color .2s;
+  }
+  
+  .--modifier {
+    color: var(--green);
+  }
+  
+  .right-nav button{
+    display: flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    border-radius: 24px;
+    border: 2px solid #434343;
+    background-color: #1B1D23;
+    color: var(--white);
+    color: #AFB9CB;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  /*styles hero */
+
+  .Bg-animation {
+    width: 100%; 
+    height: 990px;
+    background: url(/public/banner\ wing2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .Hero-content {
+    display: flex;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 8rem;
+    padding-right: 134px;
+    padding-left: 134px;
+  }
+
+  .Hero-left {
+    flex: 1 1 17rem;
+  }
+
+  .Hero-right {
+    flex: 1 1 17rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .Hero-right h1{
+    color: #FFF;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .Hero-right h2{
+    color: #FFF;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0.7rem;
+  }
+
+  .Hero-right p { 
+    color: #00EBA6;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1.1rem;
+  }
+
+  .Hero-right a {
+    display: inline-flex;
+    padding: 10px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 7px;
+    background: #FFF;
+    color: #0c1633;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    transition: background-color .2s;
+    text-transform: lowercase;
+    text-decoration: none;
+  }
+
+  .Hero-right a:hover {
+    background: #00EBA6;
+    transition: all 0.3s ease;
+  }

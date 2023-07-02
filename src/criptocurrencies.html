@@ -14,9 +14,9 @@
 <body>
   <nav>
     <div class="left-nav">
-      <img src="/public/logo.png" alt="">
-      <a class="menu_button" href="/">Home</a>
-      <a class="menu_button --modifier" href="/">Criptocurrencies</a>
+      <a href="/src/home.html"><img src="/public/logo.png" alt=""></a>
+      <a class="menu_button translatable" data-translation-key="home" href="/src/home.html">Home</a>
+      <a class="menu_button --modifier translatable" data-translation-key="cripto" href="/">Criptocurrencies</a>
     </div>
     <div class="right-nav">
       <button>
@@ -38,6 +38,13 @@
       </form>
     </div>
   </section>  
+
+  <div class="right-nav">
+    <select id="language-select">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+    </select>
+  </div>
 
   <section class="Table-container">
     <div class="Table-information">
@@ -72,14 +79,6 @@
         </div>
     </div>
   </section>
-
-  <select id="language-select">
-    <option value="en">English</option>
-    <option value="es">Español</option>
-  </select>
-  
-  <p class="translatable" data-translation-key="hello">Hello</p>
-  <p class="translatable" data-translation-key="world">World</p>
 
   <footer></footer>
 </body>

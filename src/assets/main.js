@@ -140,6 +140,14 @@ function getTranslation(translationKey, language) {
     'span-title': {
       'en': 'cryptocurrency',
       'es': 'Comienza a buscar tu'
+    },
+    'home': {
+      'en': 'Home',
+      'es': 'Inicio'
+    },
+    'cripto': {
+      'en': 'Criptocurrencies',
+      'es': 'Criptomonedas'
     }
   };
 
