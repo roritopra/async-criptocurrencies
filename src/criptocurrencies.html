@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitx</title>
     <script defer src="./assets/main.js"></script>
-    <link rel="stylesheet" href="/src/styles/index.css">
+    <link rel="stylesheet" href="/src/styles/criptocurrencies.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -28,10 +28,9 @@
 
   <section class="Hero Bg-animation">
     <div class="Hero-content">
-      <h1 class="Hero-content-title">
+      <h1 class="Hero-content-title translatable" data-translation-key="title">
         Start searching for your
-        <!---->
-        <span>criptocurrency.</span>
+        <span class="translatable" data-translation-key="span-title">criptocurrency.</span>
       </h1>
       <p class="Hero-content-message">Search for the type of the cryptocurrency or its type.</p>
       <form class="Hero-content-input">
@@ -74,9 +73,14 @@
     </div>
   </section>
 
+  <select id="language-select">
+    <option value="en">English</option>
+    <option value="es">Español</option>
+  </select>
+  
+  <p class="translatable" data-translation-key="hello">Hello</p>
+  <p class="translatable" data-translation-key="world">World</p>
+
   <footer></footer>
-
-  <div id="result-data"></div>
-
 </body>
 </html>
