@@ -155,13 +155,16 @@
   .Cards-container {
     display: flex;
     padding: 0 134px;
+    gap: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
   }
-
 
   .Cards-template {
     width: 370px;
     max-width: 370px;
     margin-top: 0;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,5 +182,201 @@
   }
 
   .Cards-info {
-    width: 75%;
+    bottom: 47px;
+    position: absolute;
+    width: 74%;
   }
+
+  .Cards-info h4 {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 25px;
+  }
+
+  .Cards-info p {
+    color: #D0D0D0;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .Cards-template img {
+    margin-bottom: 5%;
+  }
+
+  /* Styles Mobile info */
+
+  .Bg-animation-mobile {
+    width: 100%; 
+    height: 990px;
+    background: url(/public/banner-wing-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .Mobile-content {
+    display: flex;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 8rem;
+    padding-right: 134px;
+    padding-left: 134px;
+  }
+
+  .Mobile-left {
+    flex: 1 1 17rem;
+  }
+
+  .Mobile-right {
+    flex: 1 1 17rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .Mobile-left h6 {
+    color: #00EBA6;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1rem;
+  }
+
+  .Mobile-left h2 {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 53px;
+    margin-bottom: 1rem;
+  }
+
+  .Mobile-left p {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 88%;
+    max-width: 88%;
+  }
+
+  /* Auto type styles */
+
+  .Auto-type-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  .Auto-type {
+    width: 1188px;
+    height: 454px;
+    border-radius: 11px;
+    background: #141519;
+    box-shadow: 0px 24px 50px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .Bg-auto-type {
+    background: url(/public/banner-animation.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .Auto-type p {
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1rem;
+  }
+
+  .Auto-type a {
+    width: 211px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background: #FFF;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #303030;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .Auto-type a:hover {
+    background: #00EBA6;
+    transition: all 0.3s ease;
+  }
+
+  #container {
+    color: #999;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    width: 100%;
+    bottom: 45%;
+    display: block;
+    margin-bottom: 3rem;
+  }
+
+  #flip {
+    height: 50px;
+    overflow: hidden;
+  }
+
+  #flip>div>div {
+    color: #fff;
+    padding: 0px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+    border-radius: 7px;
+  }
+
+  #flip div:first-child {
+    animation: show 5s linear infinite;
+  }
+
+  #flip div div {
+    background: #00EBA6;
+  }
+
+  #flip div:first-child div {
+    background: #00EBA6;
+  }
+
+  @keyframes show {
+    0% {margin-top: -270px;}
+    5% {margin-top: -180px;}
+    33% {margin-top: -180px;}
+    38% {margin-top: -90px;}
+    66% {margin-top: -90px;}
+    71% {margin-top: 0px;}
+    99.99% {margin-top: 0px;}
+    100% {margin-top: -270px;}
+  }
+
+
+  
