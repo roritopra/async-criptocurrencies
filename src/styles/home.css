@@ -36,6 +36,7 @@
     font-weight: 600;
     line-height: normal;
     text-decoration: none;
+    transition: color .2s;
   }
   
   .menu_button:hover {
@@ -70,7 +71,7 @@
   .Bg-animation {
     width: 100%; 
     height: 990px;
-    background: url(../public/banner\ wing2.png);
+    background: url(/public/banner\ wing2.png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -157,7 +158,7 @@
     padding: 0 134px;
     gap: 3rem;
     margin-bottom: 5rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
 
   .Cards-template {
@@ -172,6 +173,11 @@
     border-radius: 11px;
     background: #141519;
     box-shadow: 0px 24px 50px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+  }
+
+  .Cards-template:hover {
+    transform: translateY(-10px);
   }
 
   .Cards-info {
@@ -214,9 +220,10 @@
   .Bg-animation-mobile {
     width: 100%; 
     height: 890px;
-    background: url(../public/banner-wing-mobile.png);
+    background: url(/public/banner-wing-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 1rem;
   }
 
   .Mobile-content {
@@ -277,7 +284,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
     text-align: center;
   }
 
@@ -294,7 +301,7 @@
   }
 
   .Bg-auto-type {
-    background: url(../public/banner-animation.png);
+    background: url(/public/banner-animation.png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -323,6 +330,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    transition: background .2s;
   }
 
   .Auto-type a:hover {
@@ -383,7 +391,7 @@
   .Bg-contact {
     width: 100%; 
     height: 1015px;
-    background: url(../public/banner-contact.png);
+    background: url(/public/banner-contact.png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -421,7 +429,7 @@
   footer {
     width: 100%; 
     height: 610px;
-    background: url(../public/footer.png);
+    background: url(/public/footer.png);
     background-repeat: no-repeat;
     background-position: center;
   }

@@ -36,6 +36,7 @@ nav {
   font-weight: 600;
   line-height: normal;
   text-decoration: none;
+  transition: color .2s;
 }
 
 .menu_button:hover {
@@ -123,6 +124,12 @@ nav {
   font-style: normal;
   font-weight: 500;
   line-height: 72px;
+  transition: border .2s;
+}
+
+.Hero-content-input input:hover {
+  border: 1px solid var(--green);
+  transition: border .2s;
 }
 
 /* Styles for the table information */
