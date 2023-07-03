@@ -213,7 +213,7 @@
 
   .Bg-animation-mobile {
     width: 100%; 
-    height: 990px;
+    height: 890px;
     background: url(/public/banner-wing-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -378,5 +378,52 @@
     100% {margin-top: -270px;}
   }
 
+  /* Contact styles */ 
+
+  .Bg-contact {
+    width: 100%; 
+    height: 1015px;
+    background: url(/public/banner-contact.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .Contact-content {
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 18rem;
+    padding-right: 134px;
+    padding-left: 134px;
+  }
+
+  .Contact-content img {
+    margin-bottom: 3rem;
+  }
+
+  .Contact-content p {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 54%;
+    margin-bottom: 3rem
+  }
+
+  .logos-info {
+    display: flex;
+    gap: 60px;
+  }
+
+  footer {
+    width: 100%; 
+    height: 610px;
+    background: url(/public/footer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   
