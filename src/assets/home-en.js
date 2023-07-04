@@ -38,7 +38,7 @@ window.sr = ScrollReveal();
 
     sr.reveal('.Auto-type-container', {
         duration: 4000,
-        origin: 'left',
+        origin: 'bottom',
         distance: '-100px'
     });
 
@@ -46,4 +46,8 @@ window.sr = ScrollReveal();
         duration: 4000,
         origin: 'top',
         distance: '-100px'
+    });
+
+    sr.reveal('.footer-scroll', {
+        duration: 4000
     });
