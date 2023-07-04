@@ -51,3 +51,5 @@ window.sr = ScrollReveal();
     sr.reveal('.footer-scroll', {
         duration: 4000
     });
+
+ 
