@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitx</title>
+    <script defer src="../assets/main.js"></script>
+    <link rel="stylesheet" href="/src/styles/criptocurrencies.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/public/logo.png" type="image/x-icon">
+</head>
+<body>
+  <nav>
+    <div class="left-nav">
+      <a href="/src/Home/home.html"><img src="/public/logo.png" alt=""></a>
+      <a class="menu_button translatable" data-translation-key="home" href="/src/Home/home.html">Home</a>
+      <a class="menu_button --modifier translatable" data-translation-key="cripto" href="/">Criptocurrencies</a>
+    </div>
+    <div class="right-nav">
+      <button>
+        <img src="/public/english.png" alt="">
+        English
+      </button>
+    </div>
+  </nav>
+
+  <section class="Hero Bg-animation">
+    <div class="Hero-content">
+      <h1 class="Hero-content-title translatable" data-translation-key="title">
+        Start searching for your
+        <span class="translatable" data-translation-key="span-title">criptocurrency.</span>
+      </h1>
+      <p class="Hero-content-message">Search for the type of the cryptocurrency or its type.</p>
+      <form class="Hero-content-input">
+        <input type="text" id="coin-filter" placeholder="Search a coin">
+      </form>
+    </div>
+  </section>  
+
+  <div class="right-nav">
+    <select id="language-select">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+    </select>
+  </div>
+
+  <section class="Table-container">
+    <div class="Table-information">
+      <div class="left-table">
+        <p>#</p>
+        <p>Coin</p>
+      </div>
+      <div class="right-table">
+        <p>Price</p>
+        <p>Price Change</p>
+        <p>24h Volume</p>
+      </div>
+    </div>
+
+    <div class="Table-content">
+          <div id="Table-content-coins-all">
+            <!--
+            <div class="order">
+              <div class="Table-content-coins-left">
+                <p>1</p>
+                <img src="/public/prueba.png" alt="">
+                <p>BTC</p>
+              </div>
+              <div class="Table-content-coins-right">
+                <p>0.00315262</p>
+                <p>-0.93634</p>
+                <p>27780599562</p>
+              </div>
+            </div>
+          <div class="border"></div>
+          -->
+        </div>
+    </div>
+  </section>
+
+  <footer></footer>
+</body>
+</html>
