@@ -71,7 +71,7 @@
   .Bg-animation {
     width: 100%; 
     height: 990px;
-    background: url(/public/banner\ wing2.png);
+    background: url(/src/img/banner\ wing2.png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -220,7 +220,7 @@
   .Bg-animation-mobile {
     width: 100%; 
     height: 890px;
-    background: url(/public/banner-wing-mobile.png);
+    background: url(/src/img/banner-wing-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 1rem;
@@ -301,7 +301,7 @@
   }
 
   .Bg-auto-type {
-    background: url(/public/banner-animation.png);
+    background: url(/src/img/banner-animation.png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -391,7 +391,7 @@
   .Bg-contact {
     width: 100%; 
     height: 1015px;
-    background: url(/public/banner-contact.png);
+    background: url(/src/img/banner-contact.png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -429,7 +429,7 @@
   footer {
     width: 100%; 
     height: 610px;
-    background: url(/public/footer.png);
+    background: url(/src/img/footer.png);
     background-repeat: no-repeat;
     background-position: center;
   }
