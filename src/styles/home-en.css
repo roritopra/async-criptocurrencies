@@ -76,6 +76,11 @@
     display: none;
     cursor: pointer;
   }
+
+  .menu-position {
+    display: flex;
+    gap: 122px;
+  }
   
   .bar {
     width: 25px;
@@ -468,7 +473,7 @@
     border-radius: 7px;
     background: #25272E;
     box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.25);
-    z-index: 1;
+    z-index: 10;
     transition: all 0.3s ease;
   }
 
@@ -621,6 +626,11 @@
     display: none;
   }
 
+  .menu-position {
+    flex-direction: column;
+    gap: 0px;
+  }
+
   .menu.show {
     display: flex;
     position: absolute;
@@ -630,7 +640,7 @@
     background-color: #1b1d23;
     width: 100%;
     padding: 10px;
-    z-index: 999;
+    z-index: 1;
     border-top: 1px solid #AFB9CB;
     padding-left: 3.5rem;
   }
@@ -738,7 +748,7 @@
   }
 
   .Hero-left {
-    flex: 1 1 17rem;
+    flex: 0 1 17rem;
   }
 
   .Hero-right h1{

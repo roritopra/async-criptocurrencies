@@ -77,6 +77,11 @@ nav {
   cursor: pointer;
 }
 
+.menu-position {
+  display: flex;
+  gap: 122px;
+}
+
 .bar {
   width: 25px;
   height: 3px;
@@ -620,6 +625,11 @@ nav {
   .menu {
     display: none;
   }
+
+  .menu-position {
+    flex-direction: column;
+    gap: 0px;
+  }
   
   .menu.show {
     display: flex;
@@ -768,5 +778,25 @@ nav {
     line-height: normal;
     width: 70%;
     margin-bottom: 3rem;
+  }
+
+  .Mobile-left h6 {
+    color: #00EBA6;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1rem;
+  }
+  
+  .Mobile-left h2 {
+    color: #FFF;
+    font-size: 25px;
+    line-height: 26px;
+    margin-bottom: 1rem;
+  }
+  
+  .Mobile-left p {
+    font-size: 14px;
   }
 }
