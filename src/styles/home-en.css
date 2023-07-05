@@ -85,7 +85,7 @@
   .Hero-content {
     display: flex;
     min-height: 100vh;
-    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
@@ -164,7 +164,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 134px;
-    gap: 3rem;
+    gap: 1.9rem;
     margin-bottom: 5rem;
     margin-top: 5rem;
   }
@@ -574,6 +574,148 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .Bg-animation-mobile {
+    width: 100%; 
+    height: 100%;
+    margin-bottom: 7rem;
+  }
+
+  .Mobile-content {
+    display: flex;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .Mobile-left {
+    width: 100%;
+  }
+
+  .Mobile-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: none;
+  }
+
+  .Mobile-left p {
+    margin-bottom: 2rem;
+  }
 
 }
 
+@media only screen and (max-width: 600px) {
+  nav {
+    padding: 0 25px;
+  }
+
+  .Hero-content {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .Cards-container {
+    padding: 0 25px;
+  }
+
+  .Mobile-content {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .Auto-type-container {
+    padding: 0 25px;
+  }
+
+  .Contact-content {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  .Hero-left img{
+    width: 95%;
+  }
+
+  .Cards-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.9rem;
+  }
+
+  .Cards-template {
+    width: 300px;
+    max-width: 300px;
+    padding-bottom: 2.5rem;
+  }
+
+  .Cards-template img {
+    width: 100%;
+  }
+
+  .Cards-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .Cards-info {
+    bottom: 47px;
+    position: absolute;
+    width: 74%;
+  }
+
+  .Mobile-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Mobile-right img {
+    width: 80%;
+  }
+
+  .Hero-content {
+    flex-direction: column;
+  }
+
+  .Hero-left {
+    flex: 1 1 17rem;
+  }
+
+  .Hero-right h1{
+    color: #FFF;
+    font-size: 40px;
+  }
+
+  .Hero-right h2{
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0.7rem;
+  }
+
+  .Hero-right p { 
+    font-size: 20px;
+  }
+
+  .Contact-content p {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 70%;
+    margin-bottom: 3rem;
+}
+
+
+}
