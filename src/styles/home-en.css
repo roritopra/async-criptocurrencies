@@ -72,6 +72,19 @@
     transition: all 0.3s ease;
   }
 
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+  }
+  
+
   /*styles hero */
 
   .Bg-animation {
@@ -604,11 +617,51 @@
     margin-bottom: 2rem;
   }
 
+  .menu {
+    display: none;
+  }
+
+  .menu.show {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 80px;
+    left: 0;
+    background-color: #1b1d23;
+    width: 100%;
+    padding: 10px;
+    z-index: 999;
+    border-top: 1px solid #AFB9CB;
+    padding-left: 3.5rem;
+  }
+
+  .menu a{ 
+    margin: 0.4rem 0;
+  }
+
+  .left-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    align-items: center;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
   nav {
     padding: 0 25px;
+  }
+
+  .menu.show {
+    padding-left: 2rem;
   }
 
   .Hero-content {
@@ -635,7 +688,7 @@
   }
   
   .Hero-left img{
-    width: 95%;
+    width: 100%;
   }
 
   .Cards-container {
