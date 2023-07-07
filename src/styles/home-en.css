@@ -663,6 +663,16 @@
     align-items: center;
   }
 
+  .Cards-container {
+    gap: 1.9rem;
+  }
+}
+
+@media only screen and (max-width: 864px) {
+  .Cards-container {
+    gap: 3.9rem;
+    margin-bottom: 3rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {

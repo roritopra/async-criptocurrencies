@@ -473,7 +473,7 @@ footer {
   border-radius: 7px;
   background: #25272E;
   box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.25);
-  z-index: 1;
+  z-index: 10;
   transition: all 0.3s ease;
 }
 
@@ -533,7 +533,7 @@ display: block;
 
 @media only screen and (max-width: 1124px) {
 .Bg-animation {
-  background:none;
+  background: url(/src/img/bg\ tablet.png);
 }
 
 .hero-info {
@@ -591,216 +591,203 @@ nav {
 }
 }
 
-@media only screen and (max-width: 900px) {
-  .Bg-animation-mobile {
-    width: 100%; 
-    height: 100%;
-    margin-bottom: 7rem;
-  }
-
-  .Mobile-content {
-    display: flex;
-    flex-wrap: none;
-    justify-content: center;
-    align-items: center;
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-
-  .Mobile-left {
-    width: 100%;
-  }
-
-  .Mobile-right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: none;
-  }
-
-  .Mobile-left p {
-    margin-bottom: 2rem;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .menu-position {
-    flex-direction: column;
-    gap: 0px;
-  }
-  
-  .menu.show {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    top: 80px;
-    left: 0;
-    background-color: #1b1d23;
-    width: 100%;
-    padding: 10px;
-    z-index: 999;
-    border-top: 1px solid #AFB9CB;
-    padding-left: 3.5rem;
-    
-  }
-
-  .menu a{ 
-    margin: 0.4rem 0;
-  }
-
-  .left-nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  nav {
-    align-items: center;
+@media only screen and (max-width: 864px) {
+  .Cards-container {
+    gap: 3.9rem;
+    margin-bottom: 3rem;
   }
 }
 
+@media only screen and (max-width: 900px) {
+.Bg-animation-mobile {
+  width: 100%; 
+  height: 100%;
+  margin-bottom: 7rem;
+}
+
+.Mobile-content {
+  display: flex;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.Mobile-left {
+  width: 100%;
+}
+
+.Mobile-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: none;
+}
+
+.Mobile-left p {
+  margin-bottom: 2rem;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-position {
+  flex-direction: column;
+  gap: 0px;
+}
+
+.menu.show {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 80px;
+  left: 0;
+  background-color: #1b1d23;
+  width: 100%;
+  padding: 10px;
+  z-index: 1;
+  border-top: 1px solid #AFB9CB;
+  padding-left: 3.5rem;
+}
+
+.menu a{ 
+  margin: 0.4rem 0;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-icon {
+  display: block;
+}
+
+nav {
+  align-items: center;
+}
+
+}
+
 @media only screen and (max-width: 600px) {
-  nav {
-    padding: 0 25px;
-  }
+.Bg-animation {
+  background: url(/src/img/bg\ tablet.png);
+}
 
-  .Bg-animation {
-    background: url(/src/img/bg\ tablet.png);
-  }
+nav {
+  padding: 0 25px;
+}
 
-  .menu.show {
-    padding-left: 2rem;
-  }
+.menu.show {
+  padding-left: 2rem;
+}
 
-  .Hero-content {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
+.Hero-content {
+  padding-right: 25px;
+  padding-left: 25px;
+}
 
-  .Cards-container {
-    padding: 0 25px;
-  }
+.Cards-container {
+  padding: 0 25px;
+}
 
-  .Mobile-content {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
+.Mobile-content {
+  padding-right: 25px;
+  padding-left: 25px;
+}
 
-  .Auto-type-container {
-    padding: 0 25px;
-  }
+.Auto-type-container {
+  padding: 0 25px;
+}
 
-  .Contact-content {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
+.Contact-content {
+  padding-right: 25px;
+  padding-left: 25px;
+}
 
-  .Hero-left img{
-    width: 100%;
-  }
+.Hero-left img{
+  width: 100%;
+}
 
-  .Cards-container {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.9rem;
-  }
+.Cards-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.9rem;
+}
 
-  .Cards-template {
-    width: 300px;
-    max-width: 300px;
-    padding-bottom: 2.5rem;
-  }
+.Cards-template {
+  width: 300px;
+  max-width: 300px;
+  padding-bottom: 2.5rem;
+}
 
-  .Cards-template img {
-    width: 100%;
-  }
+.Cards-template img {
+  width: 100%;
+}
 
-  .Cards-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+.Cards-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  .Cards-info {
-    bottom: 47px;
-    position: absolute;
-    width: 74%;
-  }
+.Cards-info {
+  bottom: 47px;
+  position: absolute;
+  width: 74%;
+}
 
-  .Mobile-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.Mobile-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .Mobile-right img {
-    width: 80%;
-  }
+.Mobile-right img {
+  width: 80%;
+}
 
-  .Hero-content {
-    flex-direction: column;
-  }
+.Hero-content {
+  flex-direction: column;
+}
 
-  .Hero-left {
-    flex: 1 1 17rem;
-  }
+.Hero-left {
+  flex: 0 1 17rem;
+}
 
-  .Hero-right h1{
-    color: #FFF;
-    font-size: 40px;
-  }
+.Hero-right h1{
+  color: #FFF;
+  font-size: 40px;
+}
 
-  .Hero-right h2{
-    color: #FFF;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 0.7rem;
-  }
+.Hero-right h2{
+  color: #FFF;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0.7rem;
+}
 
-  .Hero-right p { 
-    font-size: 20px;
-  }
+.Hero-right p { 
+  font-size: 20px;
+}
 
-  .Contact-content p {
-    color: #FFF;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 70%;
-    margin-bottom: 3rem;
-  }
-
-  .Mobile-left h6 {
-    color: #00EBA6;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 1rem;
-  }
-  
-  .Mobile-left h2 {
-    color: #FFF;
-    font-size: 25px;
-    line-height: 26px;
-    margin-bottom: 1rem;
-  }
-  
-  .Mobile-left p {
-    font-size: 14px;
-  }
+.Contact-content p {
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 70%;
+  margin-bottom: 3rem;
+}
 }
