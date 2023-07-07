@@ -184,7 +184,7 @@ nav {
 }
 
 .right-table {
-  gap: 95px;
+  gap: 70px;
 }
 
 .Table-content {
@@ -355,7 +355,7 @@ footer {
   }
 
   .right-table {
-    gap: 95px;
+    gap: 52px;
   }
 }
 
@@ -505,7 +505,7 @@ footer {
   }
   
   .price {
-    margin-right: 1rem;
+    margin-right: 2.5rem;
   }
 
   .price_change {
