@@ -670,6 +670,10 @@ nav {
     padding: 0 25px;
   }
 
+  .Bg-animation {
+    background: url(/src/img/bg\ tablet.png);
+  }
+
   .menu.show {
     padding-left: 2rem;
   }

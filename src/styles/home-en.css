@@ -667,7 +667,6 @@
 
 @media only screen and (max-width: 600px) {
   .Bg-animation {
-    background-size: 80% 80%;
     background: url(/src/img/bg\ tablet.png);
   }
 

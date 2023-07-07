@@ -72,6 +72,23 @@ nav {
   transition: all 0.3s ease;
 }
 
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-position {
+  display: flex;
+  gap: 122px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
 /* Styles fot the hero */
 
 .Hero {
@@ -287,4 +304,46 @@ footer {
 }
 
 
+@media only screen and (max-width: 900px) {
 
+  .menu {
+    display: none;
+  }
+
+  .menu-position {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .menu.show {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 80px;
+    left: 0;
+    background-color: #1b1d23;
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+    border-top: 1px solid #AFB9CB;
+    padding-left: 3.5rem;
+  }
+
+  .menu a{ 
+    margin: 0.4rem 0;
+  }
+
+  .left-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    align-items: center;
+  }
+}
