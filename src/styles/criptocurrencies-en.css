@@ -135,7 +135,8 @@ nav {
 }
 
 .Hero-content-input input {
-  width: 625px;
+  width: 100%;
+  max-width: 625px;
   height: 53px;
   flex-shrink: 0;
   border-radius: 40px;
@@ -303,6 +304,60 @@ footer {
   display: block;
 }
 
+@media only screen and (max-width: 1200px) {
+  nav {
+    padding: 0 50px
+  }
+
+  .Bg-animation { 
+    background-image: none;
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .Table-container {
+    padding: 0 50px;
+    margin-bottom: 5rem;
+  }
+  
+}
+
+@media only screen and (max-width: 1024px) {
+  .order-container p{
+    font-size: 14px;
+  }
+  
+  .order-container span {
+    font-size: 14px;
+  }
+
+  .price, .price_change, .supply {
+    width: 99px;
+    max-width: 99px;
+  }
+  
+  .price {
+    margin-right: 2.5rem;
+  }
+  
+  .price_change {
+    margin-right: 2.2rem;
+  }
+
+  .left-table, .right-table {
+    font-size: 14px;
+  }
+
+  .Table-content-coins-left {
+    gap: 20px;
+
+  }
+
+  .right-table {
+    gap: 95px;
+  }
+}
 
 @media only screen and (max-width: 900px) {
 
@@ -347,3 +402,173 @@ footer {
     align-items: center;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .order-container p{
+    font-size: 14px;
+  }
+  
+  .order-container span {
+    font-size: 14px;
+  }
+
+  .price, .price_change, .supply {
+    width: 99px;
+    max-width: 99px;
+  }
+  
+  .price {
+    margin-right: 2.5rem;
+  }
+
+  .supply {
+    display: none;
+  }
+
+  .volume {
+    display: none;
+  }
+  
+  .price_change {
+    margin-right: 2.2rem;
+  }
+
+  .left-table, .right-table {
+    font-size: 14px;
+  }
+
+  .Table-content-coins-left {
+    gap: 20px;
+
+  }
+  .right-table {
+    gap: 95px;
+  }
+
+  .Table-content-coins-left {
+    padding: 13px 15px;
+  }
+
+  .Table-content-coins-right {
+    padding-right: 15px;
+  }
+
+  .Table-information {
+    padding: 0 15px;
+  }
+
+  .Hero-content-title {
+    font-size: 50px;
+  }
+  
+  .Hero-content-message {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 72px;
+  }
+
+  .Hero-content-input input {
+    font-size: 16px;
+  }
+
+  .Hero-content {
+    padding-top: 0rem; 
+}
+}
+
+@media only screen and (max-width: 600px) {
+
+  .Bg-animation {
+    background-image: none;
+    padding: 0 20px;
+  }
+
+  nav {
+    padding: 0 20px;
+}
+
+  .order-container p{
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  .order-container span {
+    font-size: 12px;
+  }
+
+  .price, .price_change, .supply {
+    width: 60px;
+    max-width: 60px;
+  }
+  
+  .price {
+    margin-right: 1rem;
+  }
+
+  .price_change {
+    margin-right: 1rem;
+  }
+
+  .left-table, .right-table {
+    font-size: 12px;
+  }
+
+  .Table-content-coins-left {
+    gap: 20px;
+
+  }
+  .right-table {
+    gap: 20px;
+    
+  }
+
+  .Table-content-coins-left {
+    gap: 10px;
+  }
+
+  .id {
+    display: none;
+  }
+
+  .Table-container {
+    padding: 0 20px;
+  }
+
+  .Table-content-coins-left {
+    padding: 13px 10px;
+  }
+
+  .Table-content-coins-right {
+    padding-right: 5px;
+  }
+
+  .Table-information {
+    padding: 0 15px; 
+    padding-left: 15px;
+    padding-right: 20px;
+  }
+
+  .Hero-content-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .Hero-content-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .Bg-animation {
+    height: 490px;
+}
+
+  .symbol {
+    display: none;
+  }
+}
+

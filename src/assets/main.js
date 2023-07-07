@@ -63,7 +63,7 @@ function showCoin(coins) {
             <p class="id">${formatNumber(i + 0)}</p>
             <img src="${coins[i].image}" alt="">
             <p>${coins[i].name}</p>
-            <span>${symbol}</span>
+            <span class="symbol">${symbol}</span>
           </div>
           <div class="Table-content-coins-right">
             <p class="price" style="color: ${currentPriceColor}">${currentPrice}</p>
@@ -105,4 +105,15 @@ function formatNumber(number) {
     return (number + 1);
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var menuIcon = document.querySelector('.menu-icon');
+  var menu = document.querySelector('.menu');
+
+  menuIcon.addEventListener('click', function() {
+    menu.classList.toggle('show');
+  });
+});
+
+
 
